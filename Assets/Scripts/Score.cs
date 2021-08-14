@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Score : MonoBehaviour
 {
-    public int score;
+    public static int score;
     Text scoreText;
 
     float timer;

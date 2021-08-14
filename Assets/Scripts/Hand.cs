@@ -58,6 +58,7 @@ public class Hand : MonoBehaviour
 
         if (collision.tag == "gel") {
             isGel = true;
+            Score.score = Score.score + 10;
             Destroy(collision.gameObject);
         }
 
@@ -79,6 +80,7 @@ public class Hand : MonoBehaviour
         }
 
         if (isGel && collision.tag == "obstacle") {
+            Score.score = Score.score + 5;
             Destroy(collision.gameObject);
         }
     }
