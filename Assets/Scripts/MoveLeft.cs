@@ -25,8 +25,12 @@ public class MoveLeft : MonoBehaviour
         if (gameObject.tag == "obstacle") {
             if (transform.position.x <= end) {
                 Destroy(gameObject);
-            }
-            
+            }         
+        }
+        if (gameObject.tag == "gel") {
+            if (transform.position.x <= end) {
+                Destroy(gameObject);
+            }         
         }
     }
 }

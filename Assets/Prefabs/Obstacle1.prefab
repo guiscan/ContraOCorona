@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1590781637462504562}
   - component: {fileID: 2848836755368321211}
   - component: {fileID: 8749360114856690129}
+  - component: {fileID: 140856022768948610}
   m_Layer: 0
   m_Name: Obstacle1
   m_TagString: obstacle
@@ -91,7 +92,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4201440882459487830}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
@@ -124,3 +125,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 8
   end: -12
+--- !u!58 &140856022768948610
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4201440882459487830}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.008932416}
+  serializedVersion: 2
+  m_Radius: 0.21374735
