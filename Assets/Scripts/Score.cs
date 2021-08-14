@@ -27,7 +27,7 @@ public class Score : MonoBehaviour
         timer += Time.deltaTime;
         if (timer >= maxTime) {
             score++;
-            scoreText.text = score.ToString("00000");
+            scoreText.text = score.ToString("Score: 0");
             timer = 0;
         }
         

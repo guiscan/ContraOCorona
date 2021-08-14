@@ -148,7 +148,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 77836040}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.8526716, y: -0.04810524, z: 38.3}
+  m_LocalPosition: {x: 4.1, y: 1.15, z: 38.3}
   m_LocalScale: {x: 0.8932936, y: 0.8932751, z: 1}
   m_Children: []
   m_Father: {fileID: 118394945}
@@ -250,7 +250,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 91560167}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -361,9 +361,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -25, y: 264}
-  m_SizeDelta: {x: 1162.46, y: 110.92}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 111, y: 395.87}
+  m_SizeDelta: {x: 804.89, y: 108.65}
+  m_Pivot: {x: 0.50000006, y: 0.5}
 --- !u!114 &147204779
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -377,7 +377,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -386,7 +386,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 100
+    m_FontSize: 90
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
@@ -397,7 +397,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: GAME OVER
+  m_Text: GAME OVER!
 --- !u!222 &147204780
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -413,7 +413,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 147204777}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -468,7 +468,7 @@ GameObject:
   - component: {fileID: 165448155}
   - component: {fileID: 165448158}
   - component: {fileID: 165448157}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Invencible Timer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -491,9 +491,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -4.2694006, y: 4.674386}
-  m_SizeDelta: {x: 71.4116, y: 65}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -5.28, y: 4.3}
+  m_SizeDelta: {x: 48.3362, y: 61.914}
+  m_Pivot: {x: 0.5000004, y: 0.49999985}
 --- !u!114 &165448157
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -516,7 +516,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 50
+    m_FontSize: 40
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 0
@@ -777,7 +777,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -25, y: 176.01}
+  m_AnchoredPosition: {x: 111, y: 318}
   m_SizeDelta: {x: 346.95, y: 65.05}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &255778661
@@ -1735,7 +1735,7 @@ GameObject:
   - component: {fileID: 735597124}
   m_Layer: 5
   m_Name: Text
-  m_TagString: Untagged
+  m_TagString: Respawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1772,7 +1772,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1792,7 +1792,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'RESTART
+  m_Text: 'Jogar novamente
 
 '
 --- !u!222 &735597125
@@ -1954,7 +1954,7 @@ GameObject:
   - component: {fileID: 813233992}
   - component: {fileID: 813233991}
   - component: {fileID: 813233990}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Canvas
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -2116,7 +2116,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 959345068}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.7726717, y: 1.0118947, z: 38.3}
+  m_LocalPosition: {x: 4.01, y: 2.08, z: 38.3}
   m_LocalScale: {x: 1.3807685, y: 1.3137201, z: 1}
   m_Children: []
   m_Father: {fileID: 118394945}
@@ -2305,9 +2305,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 597, y: 375}
-  m_SizeDelta: {x: 226.03, y: 65}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -566, y: 400}
+  m_SizeDelta: {x: 430.74, y: 77.22}
+  m_Pivot: {x: 0.5, y: 0.49999997}
 --- !u!114 &1005003195
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2349,13 +2349,13 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 6
     m_MaxSize: 60
-    m_Alignment: 2
+    m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 00000
+  m_Text: 'Score: 0'
 --- !u!222 &1005003197
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3258,7 +3258,7 @@ GameObject:
   - component: {fileID: 1563212806}
   - component: {fileID: 1563212809}
   - component: {fileID: 1563212808}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Invencible Indicator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3281,8 +3281,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -6.78, y: 4.71}
-  m_SizeDelta: {x: 410.0933, y: 65}
+  m_AnchoredPosition: {x: -7.23, y: 4.39}
+  m_SizeDelta: {x: 312.6432, y: 46.3446}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1563212808
 MonoBehaviour:
@@ -3306,11 +3306,11 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 50
+    m_FontSize: 40
     m_FontStyle: 1
     m_BestFit: 0
-    m_MinSize: 5
-    m_MaxSize: 60
+    m_MinSize: 0
+    m_MaxSize: 300
     m_Alignment: 2
     m_AlignByGeometry: 0
     m_RichText: 1
