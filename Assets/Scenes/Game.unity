@@ -687,6 +687,7 @@ MonoBehaviour:
   jumpforce: 23
   gameManager: {fileID: 2012760517}
   gel: {fileID: 3966784346831119817, guid: 03f886566aa6abe40b3e8659319d760c, type: 3}
+  remedio: {fileID: 1794449236744689317, guid: 90ce354a4878b2d4c9ce8dd785130d83, type: 3}
   invencibleTimer: 10
   tosse: {fileID: 959345068}
   febre: {fileID: 77836040}
@@ -2205,6 +2206,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   obstacle1: {fileID: 4201440882459487830, guid: 3fa691d93ca48784aa0c9c9d499f5d7b, type: 3}
   gel: {fileID: 3966784346831119817, guid: 03f886566aa6abe40b3e8659319d760c, type: 3}
+  remedio: {fileID: 1794449236744689317, guid: 90ce354a4878b2d4c9ce8dd785130d83, type: 3}
 --- !u!4 &998509651
 Transform:
   m_ObjectHideFlags: 0
@@ -2320,7 +2322,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f63e4bb67c65ad43b4f2050340e81ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: 0
   backgroundSun: {fileID: 408884018}
 --- !u!114 &1005003196
 MonoBehaviour:

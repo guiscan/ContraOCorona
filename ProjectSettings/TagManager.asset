@@ -6,6 +6,7 @@ TagManager:
   tags:
   - obstacle
   - gel
+  - remedio
   layers:
   - Default
   - TransparentFX

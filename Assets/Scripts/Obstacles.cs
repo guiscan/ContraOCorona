@@ -15,6 +15,7 @@ public class Obstacles : MonoBehaviour
     // Prefabs dos inimigos
     public GameObject obstacle1;
     public GameObject gel;
+    public GameObject remedio;
 
 
     // Start is called before the first frame update
@@ -32,7 +33,7 @@ public class Obstacles : MonoBehaviour
         pwGeneration = Random.Range(0,100);
 
         if (timer >= maxTime + Random.Range(0.18f, 0.22f)) {
-            // Gera o inimigo
+            // Gera obstaculo
             GenerateObstacle();
             timer = 0;
         }
@@ -43,8 +44,9 @@ public class Obstacles : MonoBehaviour
 
         if (obstacle1.transform.position.x <= gel.transform.position.x) {
             Destroy(gel);
+            Destroy(remedio);
         }
-        
+
     }
 
     // Random de 0 a 10 -> Par vem de cima, Ímpar vem de baixo
@@ -56,25 +58,38 @@ public class Obstacles : MonoBehaviour
         if (objModfier%2==0) {
             newObstacle.transform.position = new Vector2(transform.position.x - Random.Range(0f,2f), Random.Range(1.0f, 2.5f));
         } else {
-            newObstacle.transform.position = new Vector2(transform.position.x, transform.position.y); // transform.position;
+            newObstacle.transform.position = new Vector2(transform.position.x, transform.position.y);
         }     
         
     }
 
     void GeneratePowerUp() {
-        GameObject newGel = Instantiate(gel);
+
+        GameObject newBuff;
+        if (Random.Range(0, 100) <= 75) 
+        {
+            newBuff = Instantiate(gel);
+        }
+        else 
+        {
+            newBuff = Instantiate(remedio);
+        }
+
         objModfier = Random.Range(0,100);
-        
         if (objModfier%2==0) {
-            newGel.transform.position = new Vector2(transform.position.x - Random.Range(0f,2f) + obstacle1.transform.position.x, Random.Range(1.0f, 2.5f));
+            newBuff.transform.position = new Vector2(transform.position.x - Random.Range(0f,2f) + obstacle1.transform.position.x, Random.Range(1.0f, 2.5f));
         } else {
-            newGel.transform.position = new Vector2(transform.position.x + obstacle1.transform.position.x, transform.position.y); // transform.position;
+            newBuff.transform.position = new Vector2(transform.position.x + obstacle1.transform.position.x, transform.position.y);
         }
     }
 
     private void OnTriggerEnter2D(Collider2D collision) {
         if (collision.tag == "gel") {
             Destroy(gel);
+        }
+        else if (collision.tag == "remedio")
+        {
+            Destroy(remedio);
         }
     }
 }

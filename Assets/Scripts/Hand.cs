@@ -11,6 +11,7 @@ public class Hand : MonoBehaviour
     private Animator myAnimator;
     public GameManager gameManager;
     public GameObject gel;
+    public GameObject remedio;
     public float invencibleTimer;
     private int death;
     public GameObject tosse;
@@ -48,6 +49,8 @@ public class Hand : MonoBehaviour
             }
 
         }
+
+
     }
 
     private void OnCollisionEnter2D(Collision2D collision) {
@@ -59,6 +62,25 @@ public class Hand : MonoBehaviour
         if (collision.tag == "gel") {
             isGel = true;
             Score.score = Score.score + 10;
+            Destroy(collision.gameObject);
+        }
+
+        if (collision.tag == "remedio")
+        {
+            if(death == 1)
+            {
+                tosse.SetActive(false);
+                death--;
+            }
+            else if (death == 2)
+            {
+                febre.SetActive(false);
+                death--;
+            }
+            else
+            {
+                Score.score = Score.score + 100;
+            }
             Destroy(collision.gameObject);
         }
 
